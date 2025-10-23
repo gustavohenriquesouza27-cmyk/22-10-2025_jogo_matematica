@@ -24,3 +24,8 @@ resposta = input("->")
 
 if resposta.lower() == "sair":
   break
+
+  # verifica se e numero
+  if not resposta.isdigit() and not (resposta.startswith("-") and resposta[1:].isdigit()):
+    print("por favor, digite um numero ou sair.")
+    continue
